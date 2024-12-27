@@ -8,8 +8,8 @@ export default function Header() {
           AlgoBot
         </Link>
         <ul className="flex space-x-6">
-          <li><Link href="#features" className="hover:text-blue-600">Features</Link></li>
-          <li><Link href="#testimonials" className="hover:text-blue-600">Testimonials</Link></li>
+          <li><Link href="#features" className="hidden lg:inline hover:text-blue-600">Features</Link></li>
+          <li><Link href="#testimonials" className="hidden lg:inline hover:text-blue-600">Testimonials</Link></li>
           <li><Link href="/login" className="hover:text-blue-600">Log In</Link></li>
           <li><Link href="/register" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Sign Up</Link></li>
         </ul>

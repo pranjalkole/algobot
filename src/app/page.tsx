@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import Features from '@/components/Features'
 import Testimonials from '@/components/Testimonials'
 import CTA from '@/components/CTA'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <CTA />
       </main>
       <footer className="bg-gray-800 text-white py-4 text-center">
-        <p>&copy; 2023 AlgoBot. All rights reserved.</p>
+        <p>&copy; 2024 AlgoBot. All rights reserved.</p>
       </footer>
     </div>
   )
@@ -25,9 +26,9 @@ function Hero() {
     <section className="text-center py-20">
       <h1 className="text-5xl font-bold mb-4">Meet AlgoBot</h1>
       <p className="text-xl mb-8">Your AI-Powered Competitive Programming Assistant</p>
-      <button className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">
+      <Link href="/register" className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">
         Get Started
-      </button>
+      </Link>
     </section>
   )
 }

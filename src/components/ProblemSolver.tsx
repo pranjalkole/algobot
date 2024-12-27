@@ -20,7 +20,6 @@ export function ProblemSolver() {
   }
 
   const handleGetHints = () => {
-    // In a real application, this would make an API call to your backend
     setLoading(true);
     setResponse('');
     setResponseType('hints')
@@ -56,7 +55,7 @@ export function ProblemSolver() {
           onChange={(e) => setProblem(e.target.value)}
           className="min-h-[100px]"
         />
-        <div className="flex space-x-4">
+        <div className="flex flex-col gap-2 sm:gap-0 sm:flex-row sm:space-x-4">
           <Button onClick={handleGetTopics} className="flex-1">
             Get Topics
           </Button>

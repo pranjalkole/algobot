@@ -1,4 +1,4 @@
-//import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
@@ -24,7 +24,7 @@ export default function Testimonials() {
           <div key={index} className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-gray-600 mb-4">"{testimonial.content}"</p>
             <div className="flex items-center">
-	    {/*              <Avatar className="h-12 w-12 mr-4">
+	    {/*<Avatar className="h-12 w-12 mr-4">
                 <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
                 <AvatarFallback>{testimonial.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
               </Avatar>*/}
